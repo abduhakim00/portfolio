@@ -1,22 +1,72 @@
 import styles from "../styles/index.module.css";
 import Link from "next/link";
+import { FaDirections } from "react-icons/fa";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { VscGithubAlt } from "react-icons/vsc";
+import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
+import React from "react";
 export default function Home() {
   return (
-    <div className={styles.parent}>
-      <div className={styles.text}>
-        <h2>
-          Well aren't You lucky to find{" "}
-          <span className={styles.name}>Hakymichi?</span>
-        </h2>
-        <p>
-          Yeah, thank me later. <br /> Hi, I'm a Software Engineer, Tech
-          enthusiast and of course an anime watcher, Hakymichi
-        </p>
-        <Link href="/contact"> Ready to serve your needs!</Link>
-      </div>
-      <div className={styles.pic}>
-        <img className={styles.img} src="homepage.jpg" />
-      </div>
-    </div>
+    <React.Fragment>
+      <main className={styles.parent}>
+        <div className={styles.text}>
+          <div className={styles.box}>
+            <h2 className={styles.h2}>
+              Ladies and gentlemen, welcome to the main event.
+            </h2>
+            <h2 className={styles.h2}>
+              In this corner, weighing in at 170 pounds, undefeated in 0 fights,
+              <br />
+              the contender to the title,{" "}
+              <span className={styles.name}>Hakymichi</span>
+            </h2>
+            <p className={styles.p}>
+              That would be a proper intro, however I chose to box coding
+              algorithms instead. <br /> That's why:
+            </p>
+          </div>
+          <div className={styles.notbox}>
+            <h2> Hi, I'm a Software Engineer and Tech Enthusiast Hakymichi</h2>
+            <Link className={styles.contact} href="/contact">
+              {" "}
+              Bring Your Project into Life, Contact Me <FaDirections />
+            </Link>
+          </div>
+        </div>
+        <div className={styles.pic}>
+          <img className={styles.img} src="homepage.jpg" />
+        </div>
+      </main>
+      <footer className={styles.footer}>
+        <a
+          className={styles.link}
+          href="https://www.linkedin.com/in/abduhakim-abdusamatov-805b14206/"
+          target="_blank"
+        >
+          <SlSocialLinkedin />
+        </a>
+        <a
+          className={styles.link}
+          target="_blank"
+          href="https://github.com/abduhakim00"
+        >
+          <VscGithubAlt />
+        </a>
+        <a
+          className={styles.link}
+          target="_blank"
+          href="https://www.facebook.com/hakim.abdusamadov/"
+        >
+          <AiOutlineFacebook />
+        </a>
+        <a
+          className={styles.link}
+          target="_blank"
+          href="https://www.instagram.com/haky.michi/"
+        >
+          <AiOutlineInstagram />
+        </a>
+      </footer>
+    </React.Fragment>
   );
 }

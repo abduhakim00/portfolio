@@ -34,7 +34,7 @@ function Navbar(props) {
               target="_blank"
               download
             >
-              <FiDownload /> Resume
+              CV <FiDownload />
             </Link>
           </li>
         </ul>
