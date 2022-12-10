@@ -26,6 +26,7 @@
 }
 
 .ul li:first-child {
+  color: darkorange;
   float: left;
   font-family: Pacifico, sans-serif;
   font-size: 24pt;
@@ -37,5 +38,5 @@
 }
 .ul li:hover:not(:first-child) {
   top: -5px;
-  box-shadow: 0px 8px 8px rgb(2, 48, 71);
+  box-shadow: 0px 8px 8px darkorange;
 }
