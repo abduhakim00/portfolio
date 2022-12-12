@@ -1,9 +1,7 @@
 import styles from "../styles/index.module.css";
 import Link from "next/link";
 import { FaDirections } from "react-icons/fa";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { VscGithubAlt } from "react-icons/vsc";
-import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
+
 import React from "react";
 export default function Home() {
   return (
@@ -37,36 +35,6 @@ export default function Home() {
           <img className={styles.img} src="homepage.jpg" />
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          className={styles.link}
-          href="https://www.linkedin.com/in/abduhakim-abdusamatov-805b14206/"
-          target="_blank"
-        >
-          <SlSocialLinkedin />
-        </a>
-        <a
-          className={styles.link}
-          target="_blank"
-          href="https://github.com/abduhakim00"
-        >
-          <VscGithubAlt />
-        </a>
-        <a
-          className={styles.link}
-          target="_blank"
-          href="https://www.facebook.com/hakim.abdusamadov/"
-        >
-          <AiOutlineFacebook />
-        </a>
-        <a
-          className={styles.link}
-          target="_blank"
-          href="https://www.instagram.com/haky.michi/"
-        >
-          <AiOutlineInstagram />
-        </a>
-      </footer>
     </React.Fragment>
   );
 }
