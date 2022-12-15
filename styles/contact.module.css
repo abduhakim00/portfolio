@@ -15,7 +15,7 @@
 }
 .h1 {
   margin: 1rem;
-  color: orange;
+  color: darkorange;
 }
 .p {
   margin: 1rem;
@@ -36,4 +36,42 @@
 }
 .h3 {
   color: darkorange;
+}
+
+.nameI,
+.emailI {
+  width: 250px;
+  border-color: grey;
+  padding: 5px;
+  margin: 10px 10px 10px 4px;
+  border-radius: 5px;
+}
+.buttonI {
+  width: 10%;
+  color: darkorange;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+}
+.textI {
+  width: 70%;
+  height: 50vh;
+  margin: 5px;
+  border-color: grey;
+  border-radius: 5px;
+  overflow: auto;
+}
+.label {
+  color: orange;
+}
+.sec {
+  display: flex;
+}
+.meh {
+  align-self: center;
+}
+
+.alert {
+  margin-left: 1.5rem;
+  color: green;
 }
