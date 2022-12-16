@@ -1,0 +1,11 @@
+.imgdiv {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.img {
+  width: 40%;
+  object-fit: cover;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}

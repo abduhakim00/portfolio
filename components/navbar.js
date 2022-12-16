@@ -12,10 +12,23 @@ function Navbar(props) {
               HakyCodes
             </Link>
           </li>
+
           <li className={props.active == "/about" ? styles.active : ""}>
-            <Link className={styles.link} href="/about">
-              About
-            </Link>
+            {props.active == "/" && (
+              <div
+                onClick={() =>
+                  window.scroll({ top: 1000, left: 0, behavior: "smooth" })
+                }
+                className={styles.div}
+              >
+                About
+              </div>
+            )}
+            {props.active != "/" && (
+              <Link className={styles.link} href="/#about">
+                About
+              </Link>
+            )}
           </li>
           <li className={props.active == "/projects" ? styles.active : ""}>
             <Link className={styles.link} href="/projects">

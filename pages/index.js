@@ -1,6 +1,7 @@
 import styles from "../styles/index.module.css";
 import Link from "next/link";
 import { FaDirections } from "react-icons/fa";
+import AboutContents from "../components/about";
 
 import React from "react";
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
             <h2 className={styles.h2}>
               Ladies and gentlemen, welcome to the main event.
             </h2>
-            <h2 className={styles.h2}>
+            <h2 className={styles.h3}>
               In this corner, weighing in at 170 pounds, undefeated in 0 fights,
               <br />
               the contender to the title,{" "}
@@ -35,6 +36,7 @@ export default function Home() {
           <img className={styles.img} src="homepage.jpg" />
         </div>
       </main>
+      <AboutContents id="about"></AboutContents>
     </React.Fragment>
   );
 }
