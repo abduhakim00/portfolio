@@ -1,11 +1,49 @@
+.sec {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  background-color: azure;
+  color: #1e1a2b;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  transition: 0.3s all ease-in;
+}
+.sec:hover {
+  background-color: beige;
+}
+.descr {
+  width: 60%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+.brag {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid darkorange;
+}
+.descr p {
+  width: 90%;
+}
+
 .imgdiv {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  width: 40%;
+  height: 350px;
 }
 
 .img {
-  width: 40%;
+  width: 98%;
+  padding-left: 2%;
+  height: 350px;
   object-fit: cover;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  transition: 0.5s all ease-in-out;
+  border-radius: 3%;
+}
+.img:hover {
+  transform: scale(1.25);
 }

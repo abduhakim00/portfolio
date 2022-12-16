@@ -26,6 +26,10 @@ export default function Home() {
           </div>
           <div className={styles.notbox}>
             <h2> Hi, I'm a Software Engineer and Tech Enthusiast Hakymichi</h2>
+            <p>
+              My services include Mobile App Development, Web Development, and
+              soon Digital Marketing
+            </p>
             <Link className={styles.contact} href="/contact">
               {" "}
               Bring Your Project into Life, Contact Me <FaDirections />
