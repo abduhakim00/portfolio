@@ -2,15 +2,22 @@ import styles from "../styles/index.module.css";
 import Link from "next/link";
 import { FaDirections } from "react-icons/fa";
 import AboutContents from "../components/about";
+import "animate.css/animate.min.css";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 export default function Home() {
+  let [bounce, setBounce] = useState("");
+  useEffect(() => {
+    setTimeout(() => {
+      bounce == "" ? setBounce("bounce") : setBounce("");
+    }, 1000);
+  }, [setTimeout, bounce, setBounce]);
   return (
     <React.Fragment>
       <main className={styles.parent}>
-        <div className={styles.text}>
+        <div className={styles.text} key={Math.random()}>
           <div className={styles.box}>
-            <h2 className={styles.h2}>
+            <h2 className={`${styles.h2} ${styles.bounce}`}>
               Ladies and gentlemen, welcome to the main event.
             </h2>
             <h2 className={styles.h3}>
@@ -40,6 +47,7 @@ export default function Home() {
           <img className={styles.img} src="homepage.jpg" />
         </div>
       </main>
+
       <AboutContents id="about"></AboutContents>
     </React.Fragment>
   );

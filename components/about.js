@@ -8,14 +8,14 @@ function AboutContents(props) {
       <div className={styles.descr}>
         <p>
           I am a 22 year old fresh graduate. I studied my Software Engineering
-          Bachelor's Degree at Eastern Mediterranean University located (duh
-          Mediterranean) in Turkey/North Cyprus. Not to brag (bragging will come
+          Bachelor's Degree at Eastern Mediterranean University located0 in (duh
+          Mediterranean) Turkey/North Cyprus. Not to brag (bragging will come
           later), but I graduated with 3.99 CGPA. Now that I'm equipped with not
           so useful knowledge, I want to get experience and continue learning as
           it is the path of engineers.
         </p>
         <p className={styles.brag}>
-          Now on the bragging part, this is me receiving my diploma and award
+          Now onto the bragging part, this is me receiving my diploma and award
           for graduating as a top student in all faculty of engineering from the
           president of North Cyprus
         </p>
