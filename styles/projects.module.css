@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+.h1 {
+  font-family: Dosis, sans-serif;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+.main {
+  margin: 1rem;
+}
+.main div {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 600px 600px;
+}
+
+.img {
+  grid-column: 1;
+  transform: translate(50%, 0);
+  grid-row: 1/4;
+  transition: 0.2s transform ease-in-out;
+}
+.h2 {
+  grid-column: 2/3;
+  color: darkorange;
+  font-family: Bangers, sans-serif;
+  opacity: 0;
+  font-size: 3rem;
+  margin: 0;
+  grid-row: 1;
+  transition: 0.3s opacity ease-in-out;
+}
+.p {
+  grid-column: 2;
+  opacity: 0;
+  margin: 0;
+  grid-row: 2/4;
+  transition: 0.4s opacity ease-in-out;
+}
+.opac {
+  opacity: 1;
+}
+.imgShift {
+  transform: translate(0, 0);
+}
