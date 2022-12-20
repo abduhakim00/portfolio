@@ -9,6 +9,7 @@
 }
 .main div {
   margin-bottom: 3rem;
+  line-height: 200%;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 600px 600px;
@@ -17,22 +18,30 @@
 
 .img {
   grid-column: 1;
+  margin-right: 1rem;
   transform: translate(50%, 0);
+  object-fit: cover;
+  width: 580px;
+  max-height: 500px;
+  min-height: 400px;
+  border: 1px solid white;
   grid-row: 1/4;
   transition: 0.2s transform ease-in-out;
 }
 .h2 {
+  margin-left: 1rem;
   grid-column: 2/3;
   color: darkorange;
   font-family: Bangers, sans-serif;
   opacity: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   grid-row: 1;
   transition: 0.3s opacity ease-in-out;
 }
 .p {
   grid-column: 2;
+  font-size: 1.25rem;
   opacity: 0;
   margin: 0;
   grid-row: 2/4;
