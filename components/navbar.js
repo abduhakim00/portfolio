@@ -45,6 +45,7 @@ function Navbar(props) {
               className={styles.link}
               href="/files/resume.pdf"
               target="_blank"
+              rel="noreferrer"
               download
             >
               CV <FiDownload />

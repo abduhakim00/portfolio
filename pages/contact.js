@@ -43,8 +43,8 @@ function Contacts() {
         <div className={styles.contact}>
           <h1 className={styles.h1}>Come by and say hello!</h1>
           <p className={styles.p}>
-            I'll be happy to answer your questions. Just send me a message in
-            the form below!
+            I&apos;ll be happy to answer your questions. Just send me a message
+            in the form below!
           </p>
           <div className={styles.formdiv}>
             <form className={styles.form} onSubmit={handleSubmit}>

@@ -28,11 +28,14 @@ export default function Home() {
             </h2>
             <p className={styles.p}>
               That would be a proper intro, however I chose to box coding
-              algorithms instead. <br /> That's why:
+              algorithms instead. <br /> That&apos;s why:
             </p>
           </div>
           <div className={styles.notbox}>
-            <h2> Hi, I'm a Software Engineer and Tech Enthusiast Hakymichi</h2>
+            <h2>
+              {" "}
+              Hi, I&apos;m a Software Engineer and Tech Enthusiast Hakymichi
+            </h2>
             <p>
               My services include Mobile App Development, Web Development, and
               soon Digital Marketing

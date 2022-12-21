@@ -36,12 +36,14 @@ function MyApp({ Component, pageProps }) {
           className={styles.link}
           href="https://www.linkedin.com/in/abduhakim-abdusamatov-805b14206/"
           target="_blank"
+          rel="noreferrer"
         >
           <SlSocialLinkedin />
         </a>
         <a
           className={styles.link}
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/abduhakim00"
         >
           <VscGithubAlt />
@@ -49,6 +51,7 @@ function MyApp({ Component, pageProps }) {
         <a
           className={styles.link}
           target="_blank"
+          rel="noreferrer"
           href="https://www.facebook.com/hakim.abdusamadov/"
         >
           <AiOutlineFacebook />
@@ -56,6 +59,7 @@ function MyApp({ Component, pageProps }) {
         <a
           className={styles.link}
           target="_blank"
+          rel="noreferrer"
           href="https://www.instagram.com/haky.michi/"
         >
           <AiOutlineInstagram />
