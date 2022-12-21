@@ -46,7 +46,7 @@ function Projects() {
       <main className={styles.main}>
         {projects.map((el) => {
           return (
-            <div key={Math.random()} onClick={() => animate(el)}>
+            <div onClick={() => animate(el)}>
               <img
                 src={project_info[el].img}
                 alt="Project Image"
