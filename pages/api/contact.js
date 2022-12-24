@@ -1,4 +1,4 @@
-function handler(req, res) {
+async function handler(req, res) {
   if (req.method == "POST") {
     let nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
@@ -16,9 +16,17 @@ function handler(req, res) {
       subject: `Message From ${req.body.firstname} ${req.body.lastname}`,
       text: req.body.subject,
     };
-    transporter.sendMail(mailData, function (err, info) {
-      if (err) console.log(err);
-      else console.log(info);
+    await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+          console.error(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
     });
 
     res.redirect("/contact?ok=ok");
