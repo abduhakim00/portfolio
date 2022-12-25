@@ -1,14 +1,19 @@
-.sec {
-  display: flex;
-  align-items: center;
-  height: 350px;
+.secout {
+  height: 450px;
   background-color: azure;
-  color: #1e1a2b;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  color: #1e1a2b;
+
   transition: 0.3s all ease-in;
 }
-.sec:hover {
+.sec {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 350px;
+}
+.secout:hover {
   background-color: beige;
 }
 .descr {
@@ -27,10 +32,16 @@
 .descr p {
   width: 90%;
 }
+.self {
+  text-decoration: underline darkorange;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 .imgdiv {
-  margin-top: 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   overflow: hidden;
   width: 40%;
   height: 350px;
@@ -46,4 +57,29 @@
 }
 .img:hover {
   transform: scale(1.25);
+}
+.servtitle {
+  padding-left: 1rem;
+  text-align: center;
+  color: darkorange;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  align-content: center;
+}
+.services div {
+  color: black;
+  border: 2px solid darkorange;
+  width: 300px;
+  background-color: azure;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.services div:hover {
+  color: darkorange;
+  border: 2px solid black;
 }
